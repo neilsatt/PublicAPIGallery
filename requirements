@@ -1,0 +1,33 @@
+Use one of the following APIs:
+OpenLibrary, 
+Starwars, 
+Pokemon and 
+Deck of Cards
+
+
+Make sure to use endpoints that do not require an API key or the use of OAuth for this project.
+
+
+Grab at least 6 items from the API. For example 6 movies from Open Movie Database, 6 Albums from Spotify.
+
+
+Display these 6+ total items in an attractive gallery
+See the api-thumbnail-page.png mockup file. You don't need to use photos if the API doesn't provide them. Clickable item titles work as well. Or you can use regular photos (not photos retrieved from the API) as thumbnails.
+Click a thumbnail to open a lightbox with displaying details of the item
+Name/title
+Description
+Image
+Other relevant data such as date, categories, price
+
+Put your project in a new GitHub repository on your GitHub account:
+See the workshop on Using GitHub for the Degree Program. The GitHub Desktop application can automatically create a new repository for you.
+Make sure that you're only putting the files for this project in that repository.
+
+
+
+
+Browser Test:
+Google Chrome
+Mozilla Firefox
+Internet Explorer/Edge
+Safari
