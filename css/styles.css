@@ -1,0 +1,46 @@
+body {
+    background-color: cadetblue;
+}
+
+
+.pic-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+
+}
+
+.pic-container .item{
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+img {
+  border: 1px solid aliceblue;
+}
+
+button {
+    font-size: 12px;
+    height: 20px;
+    margin-left: 65px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: darkturquoise; 
+    border: 1px solid black;
+}
+
+#mainHeader {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+    
+}
+
+
+
+
+
+
+
