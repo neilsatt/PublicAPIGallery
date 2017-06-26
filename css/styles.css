@@ -19,6 +19,9 @@ body {
 
 img {
   border: 1px solid aliceblue;
+    padding: 5px;
+    margin-left: 15px;
+ 
 }
 
 button {
