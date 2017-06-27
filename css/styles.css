@@ -18,11 +18,10 @@ body {
 
 
 img {
-  border: 1px solid aliceblue;
-    padding: 5px;
-    margin-left: 15px;
- 
+  border: 1px solid aliceblue; 
 }
+
+
 
 button {
     font-size: 12px;
@@ -41,6 +40,13 @@ button {
     
 }
 
+#main-content {
+   
+}
+#single-container {
+     border: 1px solid grey;
+    display: inline-block;
+}
 
 
 

@@ -27,5 +27,29 @@ for(var i = 0; i < 6; i++) {
       item.img = data.img;
       item.name = data.name;
       arr.push(item);
-   }
+   });
 }
+
+//tcherokee
+ function getPokemon() {
+   var numberOfPokemon = 7;
+    var pokemonURLs = [];
+
+    for(var i = 0; i<numberOfPokemon; i++) {
+      pokemonURLs.push("http://pokeapi.co/api/v2/pokemon/" + (i+1));
+    };
+
+    $.each(pokemonURLs, function(i, index){
+      $.getJSON(index, function(pokemon){
+        var j = i+1; //so you do not run into errors trying to access pokemon 0
+        var item = {};
+        item.name = pokemon.name;
+        item.weight = pokemon.weight;
+        item.img = pokemon.sprites.front_default;
+        item.largeImage = "large-images/pokemon" + j + ".png";
+
+        console.log(item);
+      });
+    });
+ };
+             
