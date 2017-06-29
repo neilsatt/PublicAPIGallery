@@ -8,7 +8,7 @@ window.onload = function() {
 
     for(var i = 1; i<numberOfPokemon; i++) {
       pokemonURLs.push("http://pokeapi.co/api/v2/pokemon/" + i);
-    };
+    }
 
     $.each(pokemonURLs, function(i, index){
       $.getJSON(index, function(pokemon){
@@ -24,21 +24,10 @@ window.onload = function() {
          console.log(item); 
          var contentHTML = document.getElementById('pic-container');
           
-          
-          
-         contentHTML.innerHTML += "<a href=" + item.largeImage + " data-lightbox='gallery' data-title=" + item.name  + '----' + "height=" + item.height + '----' + "weight=" + item.weight + ">" + "<img src=" + item.img + " alt='pokemon picture' + class='small-img'>" +  "</a>"; 
-         var textHTML = document.getElementById('textHTML');
-        
-            
-
-        
+         contentHTML.innerHTML += "<a href=" + item.largeImage + " data-lightbox='gallery' data-title=" + item.name  + '----' + "height=" + item.height + '----' + "weight=" + item.weight + ">" + "<img src=" + item.img + " alt='pokemon picture' + class='small-img'>" +  "</a>";       
       });
     });
- };
+ }
 
 
-/* 
-     textHTML.innerHTML += "<p>" + item.name + "</p>";
-         textHTML.innerHTML += "<p>" + item.weight + "</p>";
-*/
 
