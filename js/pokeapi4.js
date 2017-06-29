@@ -15,30 +15,27 @@ window.onload = function() {
         var j = i+1; //so you do not run into errors trying to access pokemon 0
         var item = {};
         item.name = pokemon.name;
-        item.height = pokemon.height;
         item.weight = pokemon.weight;
         item.img = pokemon.sprites.front_default;
         item.largeImage = "large-images/pokemon" + j + ".png";
         pokemonURLs.push(item); 
         
-         console.log(item); 
-         var contentHTML = document.getElementById('pic-container');
-          
-          
-          
-         contentHTML.innerHTML += "<a href=" + item.largeImage + " data-lightbox='gallery' data-title=" + item.name  + '****' + "height=" + item.height + '****' + "weight=" + item.weight + ">" + "<img src=" + item.img + " alt='pokemon picture' + class='small-img'>" +  "</a>"; 
-         var textHTML = document.getElementById('textHTML');
+        console.log(item); 
+        var contentHTML = document.getElementById('pic-container');
+        contentHTML.innerHTML += "<a class='fancybox' rel='group' href=" + item.largeImage + "><img src=" + item.img +" alt='' /></a>"  
         
-            
-
-        
+              
       });
     });
  };
 
 
 /* 
-     textHTML.innerHTML += "<p>" + item.name + "</p>";
+         var textHTML = document.getElementById('textHTML');
+         textHTML.innerHTML += "<p>" + item.name + "</p>";
          textHTML.innerHTML += "<p>" + item.weight + "</p>";
+         
+         contentHTML.innerHTML += "<a href=" + item.largeImage + " data-lightbox='gallery' data-title=" + item.name  + " " +"hello" +">" + "<img src=" + item.img + " alt='pokemon picture' + class='small-img'>" +  "</a>"; 
+         
 */
 

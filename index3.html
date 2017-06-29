@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>API Project - Pokemon</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>    
+    <script src="fancybox/source/jquery.fancybox.pack.js"></script> 
+  
+</head>
+   
+
+<body>
+    <div id="mainHeader">
+        <h1>Pokemon API</h1>
+    </div>
+    
+    <div id="pic-container">
+        <div id="textHTML"></div>
+    </div>          
+    
+    
+    <script type="text/javascript">
+	   $(document).ready(function() {
+		  $(".fancybox").fancybox();
+	   });
+    </script> 
+    
+    <script src="js/pokeapi3.js"></script>
+</body>
+</html>
