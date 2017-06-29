@@ -26,7 +26,7 @@ window.onload = function() {
           
           
           
-         contentHTML.innerHTML += "<a href=" + item.largeImage + " data-lightbox='gallery' data-title=" + item.name  + '****' + "height=" + item.height + '****' + "weight=" + item.weight + ">" + "<img src=" + item.img + " alt='pokemon picture' + class='small-img'>" +  "</a>"; 
+         contentHTML.innerHTML += "<a href=" + item.largeImage + " data-lightbox='gallery' data-title=" + item.name  + '----' + "height=" + item.height + '----' + "weight=" + item.weight + ">" + "<img src=" + item.img + " alt='pokemon picture' + class='small-img'>" +  "</a>"; 
          var textHTML = document.getElementById('textHTML');
         
             
